@@ -110,7 +110,7 @@ get_header();
 <div class="container__mobile__message">
 
     <h4>NO NO NO !<br>
-GO ON YOUR<br>:w
+GO ON YOUR<br>
 
 COMPUTER<br>
 TO CHECK<br> 
