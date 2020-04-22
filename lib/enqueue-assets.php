@@ -31,7 +31,7 @@
     https://fonts.googleapis.com/css?family=Inria+Sans:300,300i,400,400i,700,700i&display=swap
 
 function juliagarcin_add_google_fonts() {
-   wp_enqueue_style( 'juliagarcin-google-fonts', 'https://fonts.googleapis.com/css?family=Playfair+Display|Space+Mono|Stint+Ultra+Expanded&display=swap', false );
+   wp_enqueue_style( 'juliagarcin-google-fonts', 'https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400&display=swap', false );
    }
 
    add_action( 'wp_enqueue_scripts', 'juliagarcin_add_google_fonts' );

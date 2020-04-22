@@ -7,85 +7,69 @@ get_header();
 
 <div class="container">
     <div class="container__projects">
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-1" class="project__item">
+            <h5>CATALOGUE DES GENS CONTENTS</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-2" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-3" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-4" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-5" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-6" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-7" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-8" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-9" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-10" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-11" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-12" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-13" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
-            <span>Catégorie</span>
-        </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
-            <span>Catégorie</span>
-        </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
-            <span>Catégorie</span>
-        </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
-            <span>Catégorie</span>
-        </div>
-        <div class="project__item">
-            <h4>DRE@M-X</h4>
+        <div id="project-14" class="project__item">
+            <h5>DRE@M-X</h5>
             <span>Catégorie</span>
         </div>
     </div>
 
-    
+
 
     <nav>
-        <h5>Julia Garcin</h5>
-        <h5>A propos</h5>    
+        <p>Julia Garcin</p>
+        <p>A propos</p>    
 
         <div class="container__about">
             <div class="about__me">
@@ -112,18 +96,26 @@ get_header();
 </div>
 
 <div class="container__images">
-    <!-- swiper -->
-    <!-- <div class="swiper&#45;container"> -->
-    <!--     <div class="swiper&#45;wrapper"> -->
-    <!--         <div class="swiper&#45;slide"> -->
-    <!--             <img src="/wp&#45;content/uploads/2020/04/perimetre&#45;futures&#45;EP7&#45;1&#45;1.jpg" alt=""> -->
-    <!--         </div> -->
-    <!--         <div class="swiper&#45;slide"> -->
-    <!--             <img src="/wp&#45;content/uploads/2020/04/w1.jpg" alt=""> -->
-    <!--         </div> -->
-    <!--     </div> -->
-    <!-- </div> -->
-    <img src="/wp-content/uploads/2020/04/perimetre-futures-EP7-1-1.jpg" alt="">
+    <div class="container_images__info">
+        <h5 class="container__images__info__title">This is a title.</h5>
+         <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis risus sed iaculis aliquet. Curabitur porta ac turpis eget elementum. Pellentesque ipsum purus, aliquam et urna et, tincidunt tincidunt nulla. Suspendisse laoreet elementum nisl vel luctus. Sed dapibus gravida laoreet. Donec sagittis elit turpis, id vulputate magna accumsan id. Sed non iaculis libero. Praesent porta risus non urna fringilla lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tincidunt, eros nec eleifend elementum, nunc velit venenatis ex, ac faucibus eros ante ut velit. Maecenas id eros id purus pharetra egestas.
+          </p>
+
+        <p class="legend">3min10</p>
+    </div>
+    <img src="/wp-content/uploads/1.jpg" id="image-1" alt="">
+</div>
+
+<div class="container__mobile__message">
+
+    <h4>NO NO NO !<br>
+GO ON YOUR<br>:w
+
+COMPUTER<br>
+TO CHECK<br> 
+MY WORK<br>
+LITTLE RASCAL</h4>
 
 </div>
 
