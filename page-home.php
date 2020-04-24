@@ -104,7 +104,21 @@ get_header();
 
         <p class="legend">3min10</p>
     </div>
-    <img src="/wp-content/uploads/1.jpg" id="image-1" alt="">
+    <!-- <div id="image&#45;1" class="container__image__item"></div> -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+                <div class="swiper-slide container__image__item" id="image-1">
+                </div>
+                <div class="swiper-slide container__image__item upper--image" id="image-2">
+                </div>
+                <div class="swiper-slide container__image__item upper--image" id="image-3">
+                </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!-- <img src="" id="image&#45;1" alt=""> -->
+    <!-- <img src="" id="image&#45;2" alt=""> -->
 </div>
 
 <div class="container__mobile__message">
