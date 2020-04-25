@@ -23,12 +23,12 @@
 	// }
     //
 	// add_action( 'admin_enqueue_scripts', 'juliagarcin_admin_assets' );
+
 	/***********************************************************************
 	*
 	* Add custom google fonts (Inria + IBM)
 	*
 	***********************************************************************/
-    https://fonts.googleapis.com/css?family=Inria+Sans:300,300i,400,400i,700,700i&display=swap
 
 function juliagarcin_add_google_fonts() {
    wp_enqueue_style( 'juliagarcin-google-fonts', 'https://fonts.googleapis.com/css?family=Archivo+Narrow:400,600,700|Source+Code+Pro:300,400&display=swap', false );
