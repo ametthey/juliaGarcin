@@ -22,7 +22,8 @@
                 </div>
                 <div class="swiper-slide container__image__item upper--image">
                    <div class="vimeo__container">
-                        <iframe src="https://player.vimeo.com/video/237872331" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <!-- allow="autoplay; -->
+                        <iframe src="https://player.vimeo.com/video/237872331" frameborder="0"  fullscreen" allowfullscreen></iframe>
                    </div>
                 </div>
             </div>
