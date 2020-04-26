@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<div class="container">
+<div class="container"> 
         <?php get_template_part('template-parts/project'); ?>
 
         <?php get_template_part('template-parts/navigation'); ?>

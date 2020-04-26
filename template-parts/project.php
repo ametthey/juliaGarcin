@@ -1,59 +1,12 @@
 <!-- project -->
-<div class="container__projects">
-    <div id="project-1" class="project__item">
-        <h5>CATALOGUE DES GENS CONTENTS</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-2" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-3" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-4" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-5" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-6" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-7" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-8" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-9" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-10" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-11" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-12" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-13" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
-    <div id="project-14" class="project__item">
-        <h5>DRE@M-X</h5>
-        <span>Catégorie</span>
-    </div>
+<div class="container__projects" data-simplebar data-simplebar-direction='rtl'> 
+    <!-- https://support.advancedcustomfields.com/forums/topic/unique&#45;id&#45;for&#45;repeater&#45;field/ -->
+    <?php if( get_field('project_container') ): $i = 0; ?>
+        <?php while(has_sub_field('project_container')): $i++; ?>
+            <div id="project-<?php echo $i; ?>" class="project__item">
+                <h5><?php echo the_sub_field('project_title'); ?></h5>
+                <span><?php echo the_sub_field('project_cat'); ?></span>
+            </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </div>

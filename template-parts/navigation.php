@@ -6,23 +6,22 @@
     <div class="container__about">
         <div class="about__me">
             <a href="mailto:coucou@juliagarcin.com"><h5>coucou@juliagarcin.com</h5></a>         
-            <p class="about__description">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. </p>
+            <p class="about__description"><?php echo the_field('about_presentation', 'option'); ?></p>
         </div>
 
         <div class="about__parutions">
             <h5>Articles QUD Magazine</h5>        
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
-            <a href="https://www.lemonde.fr/" target="_blank">Le monde</a>
+            <!--
+            <?php if( have_rows('link_container' , 'option') ): ?>
+                <?php while( have_rows('link_container', 'option') ):
+                    $text = get_sub_field('link_text');
+                    $link = get_sub_field('link_link');
+                ?>
+                    <a href="<?php echo $link; ?>"><?php echo $text; ?></a>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            -->
 
         </div>
-
-        <!-- <button>X</button> -->
     </div>
 </nav>
