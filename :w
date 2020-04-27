@@ -21,25 +21,17 @@
                             $image = get_sub_field('gallery_element_image');
                             $embed = get_sub_field('gallery_element_embed');
 
+                            echo '<pre>';
+                            var_dump( $image );
+                            echo '</pre>';
                         ?>
 
-                            <?php if( $embed ) { ?>
-                               <div class="swipe-slide container__image__item">
-                                   <div class="vimeo__container">
-                                        <?php echo $embed; ?>
-                                   </div>
-                               </div>
-                            <?php } else { ?>
-                                <div class="swiper-slide container__images__item" style="background-image: url(<?php echo $image; ?>)">
-                                </div>
-                            <?php } ?>
-
-
+                            <div class="swiper-slide container__images__item" >
+                                <img src="<?php echo $image; ?>" alt="">
+                            </div>
                         <?php endwhile; ?>
                 <?php endif; ?>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
             </div>
 
         </div>
