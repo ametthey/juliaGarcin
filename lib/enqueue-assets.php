@@ -13,16 +13,16 @@
 
 		wp_enqueue_script( 'juliagarcin-scripts', get_template_directory_uri() . '/dist/assets/js/main.js', array(), '1.0.1' ,   true );
 
-		// wp_enqueue_script( 'juliagarcin-admin-scripts', get_template_directory_uri() . '/dist/assets/js/admin.js', array() ,  true );
+
 	}
 
 	add_action( 'wp_enqueue_scripts', 'juliagarcin_assets' );
 
-	// function juliagarcin_admin_assets() {
-	// 	wp_enqueue_script( 'juliagarcin-admin-scripts', get_template_directory_uri() . '/dist/assets/js/admin.js', array(), '1.0.0' , true );
-	// }
-    //
-	// add_action( 'admin_enqueue_scripts', 'juliagarcin_admin_assets' );
+    function juliagarcin_admin_assets() {
+        wp_enqueue_style('juliagarcin-admin-stylesheet', get_template_directory_uri() . '/dist/assets/css/admin.css', array(), '1.0.0' , 'all');
+    }
+
+    add_action('admin_enqueue_scripts', 'juliagarcin_admin_assets');
 
 	/***********************************************************************
 	*

@@ -1,6 +1,6 @@
 {
     "key": "group_5ea45cb23b98e",
-    "title": "Project",
+    "title": "Home: Project",
     "fields": [
         {
             "key": "field_5ea45f3d5e206",
@@ -65,9 +65,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "7"
+                "value": "page-home.php"
             }
         ]
     ],
@@ -93,5 +93,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1587886813
+    "modified": 1588068187
 }

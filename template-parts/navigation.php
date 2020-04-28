@@ -11,12 +11,15 @@
 
         <div class="about__parutions">
             <h5>Articles QUD Magazine</h5>        
+
             <?php if( have_rows('link_container' , 'option') ): ?>
+
                 <?php while( have_rows('link_container', 'option') ): the_row(); ?>
-                    <a href="<?php the_sub_field('link_link'); ?>">
-                        <?php the_sub_field('link_text'); ?>
-                    </a>
+
+                    <a href="<?php the_sub_field('link_link'); ?>"><?php the_sub_field('link_text');?></a>
+
                 <?php endwhile; ?>
+
             <?php endif; ?>
 
         </div>
