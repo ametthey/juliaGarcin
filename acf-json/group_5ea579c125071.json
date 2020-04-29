@@ -134,8 +134,8 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "width": 0,
-                            "height": 0
+                            "width": 411,
+                            "height": "231,19"
                         }
                     ]
                 },
@@ -219,5 +219,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1588081067
+    "modified": 1588150463
 }
