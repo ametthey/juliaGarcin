@@ -32,17 +32,41 @@
 ?>
 
                 <?php if( $embed ) { ?>
-                
-                
                     <div class="swiper-slide container__image__item">
                         <div class="vimeo__container">
-                            <?php echo $embed; ?>    
+                            <?php
+
+                            // Load value.
+                            //$iframe = get_field('oembed');
+
+                            // Use preg_match to find iframe src.
+                            preg_match('/src="(.+?)"/', $iframe, $matches);
+                            $src = $matches[1];
+
+                            // Add extra parameters to src and replcae HTML.
+                            $params = array(
+                                'controls'  => 0,
+                                'hd'        => 1,
+                                'autohide'  => 1,
+                            );
+                            $new_src = add_query_arg($params, $src);
+                            $iframe = str_replace($src, $new_src, $iframe);
+
+                            // Add extra attributes to iframe HTML.
+                            $attributes = 'frameborder="0"';
+                            $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                            // Display customized HTML.
+                            echo $embed;
+                            ?>
+                            <!--<?php echo $embed; ?>    -->
                         </div>
                     </div>
 
                 <?php } else { ?>
 
-                    <div class="swiper-slide container__images__item" style="background-image: url(<?php echo $image; ?>)">
+                <div class="swiper-slide container__images__item lazyload" data-bg="<?php echo $image; ?>">
+                <!-- style="background&#45;image: url(<?php echo $image; ?>)"> -->
                     </div>
 
                 <?php } ?>
@@ -66,48 +90,3 @@
 
 <?php endif; ?>
 
-
-
-
-
-
-<div class="wrapper__container__images" id="project-3">
-    <div class="container__images">
-        <div class="container_images__info">
-            <h5 class="container__images__info__title">This is a title.</h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis risus sed iaculis aliquet.
-                Curabitur porta ac turpis eget elementum. Pellentesque ipsum purus, aliquam et urna et, tincidunt
-                tincidunt nulla. Suspendisse laoreet elementum nisl vel luctus. Maecenas id eros id purus pharetra
-                egestas.
-                <br>
-                <br>
-                <a href="http://lemonde.fr" target="_blank">Voir le projet</a>
-            </p>
-
-            <p class="legend">3min10</p>
-        </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide container__image__item" id="image-1">
-                </div>
-                <div class="swiper-slide container__image__item upper--image" id="image-2">
-                </div>
-                <div class="swiper-slide container__image__item upper--image" id="image-3">
-                </div>
-                <div class="swiper-slide container__image__item upper--image">
-                    <div class="vimeo__container">
-                        <!-- allow="autoplay; -->
-                        <iframe src="https://player.vimeo.com/video/237872331" frameborder="0" fullscreen
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <!-- <button class="button__gallery">X</button> -->
-
-    </div>
-</div>
