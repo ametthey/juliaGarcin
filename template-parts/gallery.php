@@ -3,7 +3,7 @@
 <?php while( have_rows('gallery_container') ): the_row(); $i++;
 
         $title = get_sub_field('gallery_title');
-        $desc = get_sub_field('gallery_description');
+        $desc = get_sub_field('gallery_description', 'wpautop');
         $sub = get_sub_field('gallery_sub');
         $galleries = get_sub_field('gallery_gallery');
 
