@@ -2,6 +2,13 @@
 
 <?php while( have_rows('gallery_container') ): the_row(); $i++;
 
+        /*
+         * Remove p tag before and after Wysiwyg Editor
+         *
+         * @see https://support.advancedcustomfields.com/forums/topic/removing-paragraph-tags-from-wysiwyg-fields/
+         * @use https://www.advancedcustomfields.com/resources/wysiwyg-editor/
+         */
+
         $title = get_sub_field('gallery_title');
         $desc = get_sub_field('gallery_description', 'wpautop');
         $sub = get_sub_field('gallery_sub');
