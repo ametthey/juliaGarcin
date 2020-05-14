@@ -1,5 +1,7 @@
 ======= THIS IS THE README TO USE THIS THEME ========
 
+another command
+
 
  * COMMANDS :
  *
@@ -22,8 +24,8 @@
  * DIFFERENCE BETWEEN --save-dev and --save
  *
  * Quand on veut installer un plugin comme jquery ou fullPage js, on peut importer avec la commande --save
- * si on veut installer fullpage js , on peut faire npm install fullpage.js --save 
- * et ca va sauvegarder le plugin quand on va utiliser le theme et si on ferait --save-dev, ça sauvegarderait 
+ * si on veut installer fullpage js , on peut faire npm install fullpage.js --save
+ * et ca va sauvegarder le plugin quand on va utiliser le theme et si on ferait --save-dev, ça sauvegarderait
  * le plugin fullpage.js dans notre environnement de dev GULP
  *
  */
@@ -52,4 +54,4 @@ scss = src/assets/scss/**
 
 
 
- 
+
