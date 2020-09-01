@@ -1,16 +1,16 @@
 <!-- navigation -->
 <nav>
     <p>Julia Garcin</p>
-    <p>A propos</p>    
+    <p>A propos</p>
 
     <div class="container__about">
         <div class="about__me">
-            <a href="mailto:coucou@juliagarcin.com"><h5>coucou@juliagarcin.com</h5></a>         
+            <a href="mailto:garcinjulia@gmail.com"><h5>garcinjulia@gmail.com</h5></a>
             <p class="about__description"><?php echo the_field('about_presentation', 'option'); ?></p>
         </div>
 
         <div class="about__parutions">
-            <h5>Articles QUD Magazine</h5>        
+            <h5>Articles QUD Magazine</h5>
 
             <?php if( have_rows('link_container' , 'option') ): ?>
 
