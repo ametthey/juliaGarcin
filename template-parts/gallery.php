@@ -85,9 +85,6 @@
 
         </div>
 
-        <button class="close">fermer</button>
-
-
     </div>
 </div>
 
