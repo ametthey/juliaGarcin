@@ -1,3 +1,4 @@
+
 <?php if( have_rows('gallery_container') ): $i = 0 ?>
 
 <?php while( have_rows('gallery_container') ): the_row(); $i++;
@@ -26,69 +27,66 @@
             <p class="legend"><?php echo $sub; ?></p>
         </div>
 
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
+        <div class="container_images__gallery" data-flickity='{ "adaptiveHeight": true }'>
 
-                <?php if( have_rows('gallery_element') ): ?>
+        <?php if( have_rows('gallery_element') ): ?>
 
-                <?php while( have_rows('gallery_element') ): the_row();
+        <?php while( have_rows('gallery_element') ): the_row();
 
-                    $image = get_sub_field('gallery_element_image');
-                    $embed = get_sub_field('gallery_element_embed');
+            $image = get_sub_field('gallery_element_image');
+            $embed = get_sub_field('gallery_element_embed');
 
-?>
+        ?>
 
-                <?php if( $embed ) { ?>
-                    <div class="swiper-slide container__image__item">
-                        <div class="vimeo__container">
-                            <?php
+        <?php if( $embed ) { ?>
+        <div class="carousel-cell">
+            <div class="vimeo__container">
+            <?php
 
-                            // Load value.
-                            //$iframe = get_field('oembed');
+                // Load value.
+                //$iframe = get_field('oembed');
 
-                            // Use preg_match to find iframe src.
-                            preg_match('/src="(.+?)"/', $iframe, $matches);
-                            $src = $matches[1];
+                // Use preg_match to find iframe src.
+                preg_match('/src="(.+?)"/', $iframe, $matches);
+                $src = $matches[1];
 
-                            // Add extra parameters to src and replcae HTML.
-                            $params = array(
-                                'controls'  => 0,
-                                'hd'        => 1,
-                                'autohide'  => 1,
-                            );
-                            $new_src = add_query_arg($params, $src);
-                            $iframe = str_replace($src, $new_src, $iframe);
+                // Add extra parameters to src and replcae HTML.
+                $params = array(
+                    'controls'  => 0,
+                    'hd'        => 1,
+                    'autohide'  => 1,
+                );
+                $new_src = add_query_arg($params, $src);
+                $iframe = str_replace($src, $new_src, $iframe);
 
-                            // Add extra attributes to iframe HTML.
-                            $attributes = 'frameborder="0"';
-                            $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+                // Add extra attributes to iframe HTML.
+                $attributes = 'frameborder="0"';
+                $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 
-                            // Display customized HTML.
-                            echo $embed;
-                            ?>
-                            <!--<?php echo $embed; ?>    -->
-                        </div>
-                    </div>
-
-                <?php } else { ?>
-
-                <div class="swiper-slide container__images__item lazyload" data-bg="<?php echo $image; ?>">
-                <!-- style="background&#45;image: url(<?php echo $image; ?>)"> -->
-                    </div>
-
-                <?php } ?>
-
-
-                <?php endwhile; ?>
-
-                <?php endif; ?>
+                // Display customized HTML.
+                echo $embed;
+            ?>
             </div>
-            <div class="swiper-controller">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+        </div>
+
+        <?php } else { ?>
+
+        <div class="carousel-cell">
+            <img class="carousel-cell-image" data-flickity-lazyload="<?php echo $image; ?>" alt="">
+        </div>
+
+        <?php } ?>
+
+
+        <?php endwhile; ?>
+
+        <?php endif; ?>
+
 
         </div>
+
+        <button class="close">fermer</button>
+
 
     </div>
 </div>
