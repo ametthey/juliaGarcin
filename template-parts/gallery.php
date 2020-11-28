@@ -89,7 +89,15 @@
 
         <!-- Close button -->
         <div class="close-gallery-button">
-            <span>CLOSE</span>
+            <span>
+                <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.465 82.465" style="enable-background:new 0 0 82.465 82.465;" xml:space="preserve">
+                    <style type="text/css">
+.st0{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                    </style>
+                    <line class="st0" x1="0.354" y1="0.379" x2="82.112" y2="82.137"/>
+                    <line class="st0" x1="82.112" y1="0.354" x2="0.354" y2="82.112"/>
+                </svg>
+            </span>
         </div>
         <!-- <div class="flickity&#45;button&#45;wrapper"> -->
         <!-- </div> -->
