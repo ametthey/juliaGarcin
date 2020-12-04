@@ -39,7 +39,6 @@
 
                 <?php if( $embed ) { ?>
 
-                    <!-- Cell: Video -->
                     <div class="carousel-cell">
                         <div class="vimeo__container">
                         <?php
@@ -72,7 +71,6 @@
 
                 <?php } else { ?>
 
-                    <!-- Cell: Photo -->
                     <div class="carousel-cell">
                         <img src="<?php echo $image; ?>" alt="" class="carousel-cell-image flickity-lazyload">
                     </div>
